@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Viewer by Country Group</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+    iframe { width: 100%; height: 800px; border: 1px solid #ccc; margin-top: 20px; }
+    select { font-size: 1rem; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Select a Country to Compare the Sex Gap in TCAL</h2>
+  <select onchange="loadPDF(this.value)">
+    <option value="">-- Choose --</option>
+    
+<option value="https://drive.google.com/file/d/1wdQjzDiGABz8wipdgvkKwTMKmf7lazv4/preview">Denmark</option>
+<option value="https://drive.google.com/file/d/1cGqJ9Pa29NMInbikqb9_QD5joBTTKH1W/preview">England & Wales</option>
+<option value="https://drive.google.com/file/d/1Iot-69dNHw0z5XmaKcZX1RK0R_Osiq9Z/preview">Finland</option>
+<option value="https://drive.google.com/file/d/1b28zdXoRfjq2pwbkCo_B3HjDD6QCeUMd/preview">France</option>
+<option value="https://drive.google.com/file/d/1UYaEM3dxxqmDTSH4HzxFUruEIMy6FYqE/preview">Iceland</option>
+<option value="https://drive.google.com/file/d/17TPobwDp_I-dPAaSVJjyLesqzHPGETSM/preview">Italy</option>
+<option value="https://drive.google.com/file/d/1hlkf7Jolvzmli-V-ZN4n38RA-gTuoSz7/preview">The Netherlands</option>
+<option value="https://drive.google.com/file/d/1SRg_tBdZCRhjlJlCTIOFRC2pOdGWJ8Qg/preview">Norway</option>
+<option value="https://drive.google.com/file/d/167uAK0PdBUQLukZ99tgPUaKee1_TmHQh/preview">Scotland</option>
+<option value="https://drive.google.com/file/d/1DbHVhj8cUEFngachog1pNc4RVkWE4xHB/preview">Sweden</option>
+<option value="https://drive.google.com/file/d/1iEnLeJycA0bYQHLLkLaCrLd5W7JlCUEE/preview">Switzerland</option>
+
+    
+  </select>
+
+  <iframe id="pdfFrame" src=""></iframe>
+
+  <script>
+    function loadPDF(url) {
+      document.getElementById("pdfFrame").src = url;
+    }
+  </script>
+</body>
+</html>
